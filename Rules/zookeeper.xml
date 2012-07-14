@@ -1,0 +1,4 @@
+<Rules priority="0">
+  <Path type='directory' name='/zookeeper_data' perms="0777" owner="root" group="root" />
+  <Path type='directory' name='/opt/zookeeper' perms="0777" owner="root" group="root" />
+</Rules>

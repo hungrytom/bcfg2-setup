@@ -1,0 +1,32 @@
+2012-07-14 01:00:41,208 [myid:] - INFO  [main:QuorumPeerConfig@101] - Reading configuration from: /opt/zookeeper/zookeeper-3.4.3/bin/../conf/zoo.cfg
+2012-07-14 01:00:41,213 [myid:] - ERROR [main:QuorumPeerConfig@283] - Invalid configuration, only one server specified (ignoring)
+2012-07-14 01:00:41,218 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2012-07-14 01:00:41,219 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2012-07-14 01:00:41,219 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2012-07-14 01:00:41,219 [myid:] - WARN  [main:QuorumPeerMain@113] - Either no config or no quorum defined in config, running  in standalone mode
+2012-07-14 01:00:41,234 [myid:] - INFO  [main:QuorumPeerConfig@101] - Reading configuration from: /opt/zookeeper/zookeeper-3.4.3/bin/../conf/zoo.cfg
+2012-07-14 01:00:41,235 [myid:] - ERROR [main:QuorumPeerConfig@283] - Invalid configuration, only one server specified (ignoring)
+2012-07-14 01:00:41,235 [myid:] - INFO  [main:ZooKeeperServerMain@95] - Starting server
+2012-07-14 01:00:41,243 [myid:] - INFO  [main:Environment@98] - Server environment:zookeeper.version=3.4.3-1240972, built on 02/06/2012 10:48 GMT
+2012-07-14 01:00:41,243 [myid:] - INFO  [main:Environment@98] - Server environment:host.name=dice-master
+2012-07-14 01:00:41,249 [myid:] - INFO  [main:Environment@98] - Server environment:java.version=1.6.0_33
+2012-07-14 01:00:41,249 [myid:] - INFO  [main:Environment@98] - Server environment:java.vendor=Sun Microsystems Inc.
+2012-07-14 01:00:41,249 [myid:] - INFO  [main:Environment@98] - Server environment:java.home=/usr/java/jdk1.6.0_33/jre
+2012-07-14 01:00:41,250 [myid:] - INFO  [main:Environment@98] - Server environment:java.class.path=/opt/zookeeper/zookeeper-3.4.3/bin/../build/classes:/opt/zookeeper/zookeeper-3.4.3/bin/../build/lib/*.jar:/opt/zookeeper/zookeeper-3.4.3/bin/../lib/slf4j-log4j12-1.6.1.jar:/opt/zookeeper/zookeeper-3.4.3/bin/../lib/slf4j-api-1.6.1.jar:/opt/zookeeper/zookeeper-3.4.3/bin/../lib/netty-3.2.2.Final.jar:/opt/zookeeper/zookeeper-3.4.3/bin/../lib/log4j-1.2.15.jar:/opt/zookeeper/zookeeper-3.4.3/bin/../lib/jline-0.9.94.jar:/opt/zookeeper/zookeeper-3.4.3/bin/../zookeeper-3.4.3.jar:/opt/zookeeper/zookeeper-3.4.3/bin/../src/java/lib/*.jar:/opt/zookeeper/zookeeper-3.4.3/bin/../conf:
+2012-07-14 01:00:41,250 [myid:] - INFO  [main:Environment@98] - Server environment:java.library.path=/usr/java/jdk1.6.0_33/jre/lib/amd64/server:/usr/java/jdk1.6.0_33/jre/lib/amd64:/usr/java/jdk1.6.0_33/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2012-07-14 01:00:41,254 [myid:] - INFO  [main:Environment@98] - Server environment:java.io.tmpdir=/tmp
+2012-07-14 01:00:41,254 [myid:] - INFO  [main:Environment@98] - Server environment:java.compiler=<NA>
+2012-07-14 01:00:41,254 [myid:] - INFO  [main:Environment@98] - Server environment:os.name=Linux
+2012-07-14 01:00:41,255 [myid:] - INFO  [main:Environment@98] - Server environment:os.arch=amd64
+2012-07-14 01:00:41,255 [myid:] - INFO  [main:Environment@98] - Server environment:os.version=2.6.32-220.el6.x86_64
+2012-07-14 01:00:41,255 [myid:] - INFO  [main:Environment@98] - Server environment:user.name=root
+2012-07-14 01:00:41,255 [myid:] - INFO  [main:Environment@98] - Server environment:user.home=/root
+2012-07-14 01:00:41,256 [myid:] - INFO  [main:Environment@98] - Server environment:user.dir=/opt/zookeeper/zookeeper-3.4.3/conf
+2012-07-14 01:00:41,273 [myid:] - INFO  [main:ZooKeeperServer@733] - tickTime set to 2000
+2012-07-14 01:00:41,274 [myid:] - INFO  [main:ZooKeeperServer@742] - minSessionTimeout set to -1
+2012-07-14 01:00:41,274 [myid:] - INFO  [main:ZooKeeperServer@751] - maxSessionTimeout set to -1
+2012-07-14 01:00:41,355 [myid:] - INFO  [main:NIOServerCnxnFactory@110] - binding to port 0.0.0.0/0.0.0.0:2181
+2012-07-14 01:00:41,383 [myid:] - INFO  [main:FileTxnSnapLog@238] - Snapshotting: 0x0 to /zookeeper_data/version-2/snapshot.0
+2012-07-14 01:01:07,705 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@213] - Accepted socket connection from /0:0:0:0:0:0:0:1:58785
+2012-07-14 01:01:07,710 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@820] - Processing ruok command from /0:0:0:0:0:0:0:1:58785
+2012-07-14 01:01:07,711 [myid:] - INFO  [Thread-1:NIOServerCnxn@1000] - Closed socket connection for client /0:0:0:0:0:0:0:1:58785 (no session established for client)
