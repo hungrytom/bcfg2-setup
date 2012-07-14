@@ -1,7 +1,8 @@
-<Bundle name='hadoop'>
+<Bundle name='zookeeper'>
   <Path name='/zookeeper_data' />
   <Path name='/opt/zookeeper' />
 <!--
 	<Package name='zookeeper' />
 -->
+  <Action name='dl-and-build-zookeeper' />
 </Bundle>
