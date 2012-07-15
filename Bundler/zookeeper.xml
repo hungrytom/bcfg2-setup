@@ -5,4 +5,5 @@
 	<Package name='zookeeper' />
 -->
   <Action name='dl-and-build-zookeeper' />
+  <Path name='/etc/init.d/zookeeper' />
 </Bundle>
