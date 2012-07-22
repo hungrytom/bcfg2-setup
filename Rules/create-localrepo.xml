@@ -1,3 +1,7 @@
 <Rules priority='0'>
-    <Action name='create-localrepo' timing='post' command='wget -O /srv/local-repo/hadoop-1.0.3-1.x86_64.rpm http://mirror.lividpenguin.com/pub/apache/hadoop/common/hadoop-1.0.3/hadoop-1.0.3-1.x86_64.rpm; createrepo /srv/local-repo' when='modified' status='check' />
+    <Action name='create-localrepo' timing='post' command='
+	wget -O /srv/local-repo/hadoop-1.0.3-1.x86_64.rpm http://mirror.lividpenguin.com/pub/apache/hadoop/common/hadoop-1.0.3/hadoop-1.0.3-1.x86_64.rpm; 
+	wget -O /srv/local-repo/pig-0.10.0-1.i386.rpm http://mirror.gopotato.co.uk/apache/pig/stable/pig-0.10.0-1.i386.rpm; 
+	createrepo /srv/local-repo
+	' when='modified' status='check' />
 </Rules>
