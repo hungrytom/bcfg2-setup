@@ -20,8 +20,4 @@
     <name>dfs.datanode.max.xcievers</name>
     <value>4096</value>
   </property>
- <property>
-    <name>dfs.support.append</name>
-    <value>true</value>
-  </property>
 </configuration>
