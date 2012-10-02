@@ -1,7 +1,6 @@
 <Bundle name="zookeeper">
-  <Path name="/h12/zookeeper" />
   <Path name="/opt/zookeeper" />
-  <Path name="/h12/zookeeper/myid" />
+  <Path name="/zookeeper_data" />
   <Path name="/opt/zookeeper/zookeeper-3.4.3/conf" />
   <Path name="/opt/zookeeper/zookeeper-3.4.3/conf/zoo.cfg" />
   <Path name="/opt/zookeeper/zookeeper-3.4.3/zkservers" />
@@ -12,4 +11,5 @@
   <Path name="/etc/init.d/zookeeper" />
   <!-- Netcat needed for testing -->
   <Package name="nc" />
+  <Path name="/zookeeper_data/myid" />
 </Bundle>
