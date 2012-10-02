@@ -28,6 +28,16 @@
      <Group name='basic'/>
    </Group>
 
+   <Group profile='true' name='zookeeper' public='true'>
+     <Bundle name='zookeeper'/>
+     <Group name='basic'/>
+   </Group>
+
+   <Group profile='true' name='hbase' public='true'>
+     <Bundle name='hbase'/>
+     <Group name='zookeeper'/>
+   </Group>
+
    <Group profile='true' name='repo' public='true'>
         <!-- This will be the service node profile -->
         <Bundle name='permissive-selinux'/>
