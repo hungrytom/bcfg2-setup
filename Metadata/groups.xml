@@ -1,58 +1,143 @@
-<Groups version='3.0'>
-   <Group profile='true' public='true' default='true' name='basic'>
-     <Group name='sci-linux'/>
-     <Group name='x86_64'/>
-   </Group>
-   <Group name='ubuntu'/>
-   <Group name='debian'/>
-   <Group name='x86_64'/>
+<Groups version="3.0">
+  <Group profile="true" public="true" default="true" name="basic">
+    <Group name="sci-linux" />
+    <Group name="x86_64" />
+    <Group name="munin-node" />
+  </Group>
+  <Group name="ubuntu" />
+  <Group name="debian" />
+  <Group name="x86_64" />
 
-   <Group name='redhat'>
-     <Bundle name='motd'/>
-     <Bundle name='base-packages'/>
-   </Group>
+  <Group name="redhat">
+    <Bundle name="motd" />
+    <Bundle name="base-packages" />
+  </Group>
 
-   <Group name='sci-linux'>
-     <Group name='redhat'/>
-     <Bundle name='git'/>
-   </Group>
+  <Group name="sci-linux">
+    <Group name="redhat" />
+    <Bundle name="git" />
+  </Group>
 
-   <Group profile='true' name='couch' public='true'>
-     <Bundle name='permissive-selinux'/>
-     <Bundle name='bigcouch'/>
-     <Group name='basic'/>
-   </Group>
+  <Group name="munin-node">
+    <Bundle name="munin-node" />
+  </Group>
 
-   <Group profile='true' name='hadoop' public='true'>
-     <Bundle name='hadoop'/>
-     <Group name='basic'/>
-   </Group>
+  <Group profile="true" name="bcfg2-server" public="true">
+    <Group name="basic" />
+    <Bundle name="server-bcfg" />
+  </Group>
 
-   <Group profile='true' name='zookeeper' public='true'>
-     <Bundle name='zookeeper'/>
-     <Group name='basic'/>
-   </Group>
+  <Group profile="true" name="basic-user" public="true">
+    <Bundle name="user-accounts" />
+    <Group name="basic" />
+  </Group>
 
-   <Group profile='true' name='hbase' public='true'>
-     <Bundle name='hbase'/>
-     <Group name='basic'/>
-   </Group>
+  <Group profile="true" name="couch" public="true">
+    <Bundle name="bigcouch" />
+    <Group name="basic" />
+  </Group>
 
-   <Group profile='true' name='pig' public='true'>
-     <Bundle name='pig'/>
-     <Group name='basic'/>
-   </Group>
+  <Group profile="true" name="hadoop" public="true">
+    <Bundle name="hadoop" />
+    <Group name="pig" />
+    <Group name="basic-user" />
+  </Group>
 
-   <Group profile='true' name='mahout' public='true'>
-     <Bundle name='mahout'/>
-     <Group name='basic'/>
-   </Group>
+  <Group profile="true" name="hadoop-master" public="true">
+    <Group name="hadoop" />
+    <Bundle name="hadoop-master" />
+  </Group>
 
-   <Group profile='true' name='repo' public='true'>
-        <!-- This will be the service node profile -->
-        <Bundle name='permissive-selinux'/>
-        <Bundle name='apache' />
-        <Bundle name='localrepo' />
-        <Group name='basic'/>
-   </Group>
+  <Group profile="true" name="hadoop-worker" public="true">
+    <Group name="hadoop" />
+    <Bundle name="hadoop-worker" />
+  </Group>
+
+  <Group profile="true" name="zookeeper" public="true">
+    <Bundle name="zookeeper" />
+    <Group name="basic-user" />
+  </Group>
+
+  <Group profile="true" name="hadoop-worker-zookeeper" public="true">
+    <Group name="zookeeper" />
+    <Group name="hadoop-worker" />
+  </Group>
+
+  <Group profile='true' name='hbase' public='true'>
+    <Bundle name='hbase'/>
+    <Group name='basic'/>
+  </Group>
+
+  <Group profile="true" name="hadoop-worker-hbase" public="true">
+    <Group name="hbase" />
+    <Group name="hadoop-worker" />
+  </Group>
+
+  <Group profile='true' name='pig' public='true'>
+    <Bundle name='pig'/>
+    <Group name='basic-user'/>
+  </Group>
+
+  <Group profile='true' name='mahout' public='true'>
+    <Bundle name='mahout'/>
+    <Group name='basic'/>
+  </Group>
+
+  <Group profile="true" name="repo" public="true">
+    <!-- This will be the service node profile -->
+    <Bundle name="apache" />
+    <Bundle name="localrepo" />
+    <Group name="basic" />
+  </Group>
+
+  <Group profile="true" name="router" public="true">
+    <Bundle name="router" />
+  </Group>
+
+  <Group profile="true" name="io" public="true">
+    <Group name="router" />
+    <Group name="basic-user" />
+    <Group name="reverse-proxy" />
+  </Group>
+
+  <Group name="reverse-proxy" public="true">
+    <Bundle name="apache" />
+    <Bundle name="reverse-proxy" />
+  </Group>
+
+  <Group profile="true" name="ci" public="true">
+    <Group name="basic" />
+    <Bundle name="jenkins" />
+  </Group>
+
+  <Group profile="true" name="local-tarballs" public="true">
+    <Bundle name="apache" />
+    <Bundle name="local-tarballs" />
+  </Group>
+
+  <Group profile="true" name="vm-host" public="true">
+    <Group name="basic" />
+  </Group>
+
+  <Group profile="true" name="admin-node-0" public="true">
+    <Group name="vm-host" />
+    <Group name="local-tarballs" />
+    <Bundle name="munin-master" />
+  </Group>
+
+  <Group profile="true" name="admin-node-1" public="true">
+    <Group name="vm-host" />
+    <Group name="bcfg2-server" />
+    <Bundle name="munin-master" />
+  </Group>
+
+  <Group profile="true" name="mossaic" public="true">
+    <Group name="basic" />
+    <Bundle name="mossaic" />
+  </Group>
+
+  <Group profile="true" name="cse" public="true">
+    <Group name="hadoop" />
+    <Group name="hbase" />
+  </Group>
 </Groups>

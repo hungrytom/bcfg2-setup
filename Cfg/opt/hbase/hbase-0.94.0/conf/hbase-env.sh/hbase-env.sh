@@ -22,7 +22,7 @@
 # Set environment variables here.
 
 # The java implementation to use.  Java 1.6 required.
-export JAVA_HOME=/usr/lib/jvm/jre-1.6.0
+export JAVA_HOME=/usr/java/default
 
 # Extra Java CLASSPATH elements.  Optional.
 # export HBASE_CLASSPATH=
@@ -89,3 +89,6 @@ export HBASE_OPTS="-XX:+UseConcMarkSweepGC"
 
 # Tell HBase whether it should manage it's own instance of Zookeeper or not.
 export HBASE_MANAGES_ZK=false
+
+export HBASE_HOME=/opt/hbase/hbase-0.94.0
+export PATH=$HBASE_HOME/bin:$PATH
